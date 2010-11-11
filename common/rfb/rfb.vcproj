@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="rfb"
-	SccProjectName=""
-	SccLocalPath="">
+	ProjectGUID="{5F0B1D1B-306D-4D7F-AB22-DCF01632B73B}"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\..\Debug"
 			IntermediateDirectory=".\..\Debug\rfb"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
@@ -25,51 +46,74 @@
 				PreprocessorDefinitions="_DEBUG;_LIB;WIN32"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderFile=".\..\Debug\rfb/rfb.pch"
 				AssemblerListingLocation=".\..\Debug\rfb/"
 				ObjectFile=".\..\Debug\rfb/"
 				ProgramDataBaseFileName=".\..\Debug\rfb/"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				DebugInformationFormat="3"
 				CompileAs="0"
-				ForcedIncludeFiles="rdr/msvcwarning.h"/>
+				ForcedIncludeFiles="rdr/msvcwarning.h"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\..\Debug\rfb.lib"
-				SuppressStartupBanner="TRUE"/>
-			<Tool
-				Name="VCMIDLTool"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
-				Culture="2057"/>
+				Culture="2057"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLibrarianTool"
+				OutputFile=".\..\Debug\rfb.lib"
+				SuppressStartupBanner="true"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Debug Unicode|Win32"
 			OutputDirectory=".\..\Debug_Unicode"
 			IntermediateDirectory=".\..\Debug_Unicode\rfb"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="1">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
@@ -77,95 +121,124 @@
 				PreprocessorDefinitions="_LIB;_DEBUG;WIN32;UNICODE"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderFile=".\..\Debug_Unicode\rfb/rfb.pch"
 				AssemblerListingLocation=".\..\Debug_Unicode\rfb/"
 				ObjectFile=".\..\Debug_Unicode\rfb/"
 				ProgramDataBaseFileName=".\..\Debug_Unicode\rfb/"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				DebugInformationFormat="3"
 				CompileAs="0"
-				ForcedIncludeFiles="rdr/msvcwarning.h"/>
+				ForcedIncludeFiles="rdr/msvcwarning.h"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\..\Debug_Unicode\rfb.lib"
-				SuppressStartupBanner="TRUE"/>
-			<Tool
-				Name="VCMIDLTool"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_DEBUG"
-				Culture="2057"/>
+				Culture="2057"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLibrarianTool"
+				OutputFile=".\..\Debug_Unicode\rfb.lib"
+				SuppressStartupBanner="true"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory=".\..\Release"
 			IntermediateDirectory=".\..\Release\rfb"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="1"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="..,../../win"
 				PreprocessorDefinitions="NDEBUG;_LIB;WIN32"
-				StringPooling="TRUE"
+				StringPooling="true"
 				RuntimeLibrary="0"
-				EnableFunctionLevelLinking="TRUE"
-				UsePrecompiledHeader="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderFile=".\..\Release\rfb/rfb.pch"
 				AssemblerListingLocation=".\..\Release\rfb/"
 				ObjectFile=".\..\Release\rfb/"
 				ProgramDataBaseFileName=".\..\Release\rfb/"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				CompileAs="0"
-				ForcedIncludeFiles="rdr/msvcwarning.h"/>
+				ForcedIncludeFiles="rdr/msvcwarning.h"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLibrarianTool"
-				OutputFile=".\..\Release\rfb.lib"
-				SuppressStartupBanner="TRUE"/>
-			<Tool
-				Name="VCMIDLTool"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
-				Culture="2057"/>
+				Culture="2057"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLibrarianTool"
+				OutputFile=".\..\Release\rfb.lib"
+				SuppressStartupBanner="true"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -173,1809 +246,2231 @@
 	<Files>
 		<Filter
 			Name="Source Files"
-			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+			>
 			<File
-				RelativePath="Blacklist.cxx">
+				RelativePath="Blacklist.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CConnection.cxx">
+				RelativePath="CConnection.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CMsgHandler.cxx">
+				RelativePath="CMsgHandler.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CMsgReader.cxx">
+				RelativePath="CMsgReader.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CMsgReaderV3.cxx">
+				RelativePath="CMsgReaderV3.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CMsgWriter.cxx">
+				RelativePath="CMsgWriter.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CMsgWriterV3.cxx">
+				RelativePath="CMsgWriterV3.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ComparingUpdateTracker.cxx">
+				RelativePath="ComparingUpdateTracker.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Configuration.cxx">
+				RelativePath="Configuration.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ConnParams.cxx">
+				RelativePath="ConnParams.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="CSecurityVncAuth.cxx">
+				RelativePath="CSecurityVncAuth.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Cursor.cxx">
+				RelativePath="Cursor.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="d3des.c">
+				RelativePath="d3des.c"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Decoder.cxx">
+				RelativePath="Decoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Encoder.cxx">
+				RelativePath="Encoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="encodings.cxx">
+				RelativePath="encodings.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="HextileDecoder.cxx">
+				RelativePath="HextileDecoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="HextileEncoder.cxx">
+				RelativePath="HextileEncoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="HTTPServer.cxx">
+				RelativePath="HTTPServer.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="KeyRemapper.cxx">
+				RelativePath="KeyRemapper.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Logger.cxx">
+				RelativePath="Logger.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Logger_file.cxx">
+				RelativePath="Logger_file.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Logger_stdio.cxx">
+				RelativePath="Logger_stdio.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="LogWriter.cxx">
+				RelativePath="LogWriter.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Password.cxx">
+				RelativePath="Password.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="PixelBuffer.cxx">
+				RelativePath="PixelBuffer.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="PixelFormat.cxx">
+				RelativePath="PixelFormat.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="RawDecoder.cxx">
+				RelativePath="RawDecoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="RawEncoder.cxx">
+				RelativePath="RawEncoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="Region.cxx">
+				RelativePath="Region.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="RREDecoder.cxx">
+				RelativePath="RREDecoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="RREEncoder.cxx">
+				RelativePath="RREEncoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SConnection.cxx">
+				RelativePath="SConnection.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="secTypes.cxx">
+				RelativePath="secTypes.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ServerCore.cxx">
+				RelativePath="ServerCore.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SMsgHandler.cxx">
+				RelativePath="SMsgHandler.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SMsgReader.cxx">
+				RelativePath="SMsgReader.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SMsgReaderV3.cxx">
+				RelativePath="SMsgReaderV3.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SMsgWriter.cxx">
+				RelativePath="SMsgWriter.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SMsgWriterV3.cxx">
+				RelativePath="SMsgWriterV3.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SSecurityFactoryStandard.cxx">
+				RelativePath="SSecurityFactoryStandard.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="SSecurityVncAuth.cxx">
+				RelativePath="SSecurityVncAuth.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="TransImageGetter.cxx">
+				RelativePath="TransImageGetter.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="UpdateTracker.cxx">
+				RelativePath="UpdateTracker.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="util.cxx">
+				RelativePath="util.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="VNCSConnectionST.cxx">
+				RelativePath="VNCSConnectionST.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="VNCServerST.cxx">
+				RelativePath="VNCServerST.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ZRLEDecoder.cxx">
+				RelativePath="ZRLEDecoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ZRLEEncoder.cxx">
+				RelativePath="ZRLEEncoder.cxx"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="1"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
-			Filter="h;hpp;hxx;hm;inl">
+			Filter="h;hpp;hxx;hm;inl"
+			>
 			<File
-				RelativePath="Blacklist.h">
+				RelativePath="Blacklist.h"
+				>
 			</File>
 			<File
-				RelativePath="CConnection.h">
+				RelativePath="CConnection.h"
+				>
 			</File>
 			<File
-				RelativePath="CMsgHandler.h">
+				RelativePath="CMsgHandler.h"
+				>
 			</File>
 			<File
-				RelativePath="CMsgReader.h">
+				RelativePath="CMsgReader.h"
+				>
 			</File>
 			<File
-				RelativePath="CMsgReaderV3.h">
+				RelativePath="CMsgReaderV3.h"
+				>
 			</File>
 			<File
-				RelativePath="CMsgWriter.h">
+				RelativePath="CMsgWriter.h"
+				>
 			</File>
 			<File
-				RelativePath="CMsgWriterV3.h">
+				RelativePath="CMsgWriterV3.h"
+				>
 			</File>
 			<File
-				RelativePath="ColourCube.h">
+				RelativePath="ColourCube.h"
+				>
 			</File>
 			<File
-				RelativePath="ColourMap.h">
+				RelativePath="ColourMap.h"
+				>
 			</File>
 			<File
-				RelativePath="ComparingUpdateTracker.h">
+				RelativePath="ComparingUpdateTracker.h"
+				>
 			</File>
 			<File
-				RelativePath="Configuration.h">
+				RelativePath="Configuration.h"
+				>
 			</File>
 			<File
-				RelativePath="ConnParams.h">
+				RelativePath="ConnParams.h"
+				>
 			</File>
 			<File
-				RelativePath="CSecurity.h">
+				RelativePath="CSecurity.h"
+				>
 			</File>
 			<File
-				RelativePath="CSecurityNone.h">
+				RelativePath="CSecurityNone.h"
+				>
 			</File>
 			<File
-				RelativePath="CSecurityVncAuth.h">
+				RelativePath="CSecurityVncAuth.h"
+				>
 			</File>
 			<File
-				RelativePath="Cursor.h">
+				RelativePath="Cursor.h"
+				>
 			</File>
 			<File
-				RelativePath="d3des.h">
+				RelativePath="d3des.h"
+				>
 			</File>
 			<File
-				RelativePath="Decoder.h">
+				RelativePath="Decoder.h"
+				>
 			</File>
 			<File
-				RelativePath="Encoder.h">
+				RelativePath="Encoder.h"
+				>
 			</File>
 			<File
-				RelativePath="encodings.h">
+				RelativePath="encodings.h"
+				>
 			</File>
 			<File
-				RelativePath="Exception.h">
+				RelativePath="Exception.h"
+				>
 			</File>
 			<File
-				RelativePath="hextileConstants.h">
+				RelativePath="hextileConstants.h"
+				>
 			</File>
 			<File
-				RelativePath="hextileDecode.h">
+				RelativePath="hextileDecode.h"
+				>
 			</File>
 			<File
-				RelativePath="HextileDecoder.h">
+				RelativePath="HextileDecoder.h"
+				>
 			</File>
 			<File
-				RelativePath="hextileEncode.h">
+				RelativePath="hextileEncode.h"
+				>
 			</File>
 			<File
-				RelativePath="HextileEncoder.h">
+				RelativePath="HextileEncoder.h"
+				>
 			</File>
 			<File
-				RelativePath="Hostname.h">
+				RelativePath="Hostname.h"
+				>
 			</File>
 			<File
-				RelativePath="HTTPServer.h">
+				RelativePath="HTTPServer.h"
+				>
 			</File>
 			<File
-				RelativePath="ImageGetter.h">
+				RelativePath="ImageGetter.h"
+				>
 			</File>
 			<File
-				RelativePath="InputHandler.h">
+				RelativePath="InputHandler.h"
+				>
 			</File>
 			<File
-				RelativePath="KeyRemapper.h">
+				RelativePath="KeyRemapper.h"
+				>
 			</File>
 			<File
-				RelativePath="keysymdef.h">
+				RelativePath="keysymdef.h"
+				>
 			</File>
 			<File
-				RelativePath="Logger.h">
+				RelativePath="Logger.h"
+				>
 			</File>
 			<File
-				RelativePath="Logger_file.h">
+				RelativePath="Logger_file.h"
+				>
 			</File>
 			<File
-				RelativePath="Logger_stdio.h">
+				RelativePath="Logger_stdio.h"
+				>
 			</File>
 			<File
-				RelativePath="LogWriter.h">
+				RelativePath="LogWriter.h"
+				>
 			</File>
 			<File
-				RelativePath="msgTypes.h">
+				RelativePath="msgTypes.h"
+				>
 			</File>
 			<File
-				RelativePath="Password.h">
+				RelativePath="Password.h"
+				>
 			</File>
 			<File
-				RelativePath="Pixel.h">
+				RelativePath="Pixel.h"
+				>
 			</File>
 			<File
-				RelativePath="PixelBuffer.h">
+				RelativePath="PixelBuffer.h"
+				>
 			</File>
 			<File
-				RelativePath="PixelFormat.h">
+				RelativePath="PixelFormat.h"
+				>
 			</File>
 			<File
-				RelativePath="RawDecoder.h">
+				RelativePath="RawDecoder.h"
+				>
 			</File>
 			<File
-				RelativePath="RawEncoder.h">
+				RelativePath="RawEncoder.h"
+				>
 			</File>
 			<File
-				RelativePath="Rect.h">
+				RelativePath="Rect.h"
+				>
 			</File>
 			<File
-				RelativePath="Region.h">
+				RelativePath="Region.h"
+				>
 			</File>
 			<File
-				RelativePath="rreDecode.h">
+				RelativePath="rreDecode.h"
+				>
 			</File>
 			<File
-				RelativePath="RREDecoder.h">
+				RelativePath="RREDecoder.h"
+				>
 			</File>
 			<File
-				RelativePath="rreEncode.h">
+				RelativePath="rreEncode.h"
+				>
 			</File>
 			<File
-				RelativePath="RREEncoder.h">
+				RelativePath="RREEncoder.h"
+				>
 			</File>
 			<File
-				RelativePath="SConnection.h">
+				RelativePath="SConnection.h"
+				>
 			</File>
 			<File
-				RelativePath="SDesktop.h">
+				RelativePath="SDesktop.h"
+				>
 			</File>
 			<File
-				RelativePath="secTypes.h">
+				RelativePath="secTypes.h"
+				>
 			</File>
 			<File
-				RelativePath="ServerCore.h">
+				RelativePath="ServerCore.h"
+				>
 			</File>
 			<File
-				RelativePath="SMsgHandler.h">
+				RelativePath="SMsgHandler.h"
+				>
 			</File>
 			<File
-				RelativePath="SMsgReader.h">
+				RelativePath="SMsgReader.h"
+				>
 			</File>
 			<File
-				RelativePath="SMsgReaderV3.h">
+				RelativePath="SMsgReaderV3.h"
+				>
 			</File>
 			<File
-				RelativePath="SMsgWriter.h">
+				RelativePath="SMsgWriter.h"
+				>
 			</File>
 			<File
-				RelativePath="SMsgWriterV3.h">
+				RelativePath="SMsgWriterV3.h"
+				>
 			</File>
 			<File
-				RelativePath="SSecurity.h">
+				RelativePath="SSecurity.h"
+				>
 			</File>
 			<File
-				RelativePath="SSecurityFactoryStandard.h">
+				RelativePath="SSecurityFactoryStandard.h"
+				>
 			</File>
 			<File
-				RelativePath="SSecurityNone.h">
+				RelativePath="SSecurityNone.h"
+				>
 			</File>
 			<File
-				RelativePath="SSecurityVncAuth.h">
+				RelativePath="SSecurityVncAuth.h"
+				>
 			</File>
 			<File
-				RelativePath="Threading.h">
+				RelativePath="Threading.h"
+				>
 			</File>
 			<File
-				RelativePath="TransImageGetter.h">
+				RelativePath="TransImageGetter.h"
+				>
 			</File>
 			<File
-				RelativePath="transInitTempl.h">
+				RelativePath="transInitTempl.h"
+				>
 			</File>
 			<File
-				RelativePath="transTempl.h">
+				RelativePath="transTempl.h"
+				>
 			</File>
 			<File
-				RelativePath="TrueColourMap.h">
+				RelativePath="TrueColourMap.h"
+				>
 			</File>
 			<File
-				RelativePath="UpdateTracker.h">
+				RelativePath="UpdateTracker.h"
+				>
 			</File>
 			<File
-				RelativePath="UserPasswdGetter.h">
+				RelativePath="UserPasswdGetter.h"
+				>
 			</File>
 			<File
-				RelativePath="util.h">
+				RelativePath="util.h"
+				>
 			</File>
 			<File
-				RelativePath="VNCSConnectionST.h">
+				RelativePath="VNCSConnectionST.h"
+				>
 			</File>
 			<File
-				RelativePath="VNCServer.h">
+				RelativePath="VNCServer.h"
+				>
 			</File>
 			<File
-				RelativePath="VNCServerST.h">
+				RelativePath="VNCServerST.h"
+				>
 			</File>
 			<File
-				RelativePath="zrleDecode.h">
+				RelativePath="zrleDecode.h"
+				>
 			</File>
 			<File
-				RelativePath="ZRLEDecoder.h">
+				RelativePath="ZRLEDecoder.h"
+				>
 			</File>
 			<File
-				RelativePath="zrleEncode.h">
+				RelativePath="zrleEncode.h"
+				>
 			</File>
 			<File
-				RelativePath="ZRLEEncoder.h">
+				RelativePath="ZRLEEncoder.h"
+				>
 			</File>
 		</Filter>
 	</Files>

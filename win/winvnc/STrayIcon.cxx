@@ -38,7 +38,7 @@ using namespace winvnc;
 static LogWriter vlog("STrayIcon");
 
 BoolParameter STrayIconThread::disableOptions("DisableOptions", "Disable the Options entry in the VNC Server tray menu.", false);
-BoolParameter STrayIconThread::disableClose("DisableClose", "Disable the Close entry in the VNC Server tray menu.", false);
+BoolParameter STrayIconThread::disableClose("DisableClose", "Disable the Close entry in the VNC Server tray menu.", true);
 
 
 //
@@ -62,16 +62,18 @@ const UINT WM_SET_TOOLTIP = WM_USER + 1;
 class winvnc::STrayIcon : public TrayIcon {
 public:
   STrayIcon(STrayIconThread& t) : thread(t),
-    vncConfig(_T("vncconfig.exe"), isServiceProcess() ? _T("-noconsole -service") : _T("-noconsole")),
-    vncConnect(_T("winvnc4.exe"), _T("-noconsole -connect")) {
+    vncConfig(_T("rdhaconfig.exe"), isServiceProcess() ? _T("-noconsole -service") : _T("-noconsole")),
+    vncConnect(_T("rdha.exe"), _T("-noconsole -connect")) {
 
     // ***
     SetWindowText(getHandle(), _T("winvnc::IPC_Interface"));
     // ***
 
-    SetTimer(getHandle(), 1, 3000, 0);
-    PostMessage(getHandle(), WM_TIMER, 1, 0);
-    PostMessage(getHandle(), WM_SET_TOOLTIP, 0, 0);
+	if (! thread.server.quiteMode) {
+		SetTimer(getHandle(), 1, 3000, 0);
+        PostMessage(getHandle(), WM_TIMER, 1, 0);
+		PostMessage(getHandle(), WM_SET_TOOLTIP, 0, 0);
+	}
   }
 
   virtual LRESULT processMessage(UINT msg, WPARAM wParam, LPARAM lParam) {
@@ -154,7 +156,7 @@ public:
         }
         break;
       case ID_ABOUT:
-        AboutDialog::instance.showDialog();
+        //AboutDialog::instance.showDialog();
         break;
       }
       return 0;
@@ -186,6 +188,7 @@ public:
         SendMessage(getHandle(), WM_CLOSE, 0, 0);
         return 0;
       }
+	  
       setIcon(thread.server.isServerInUse() ? thread.activeIcon : thread.inactiveIcon);
       return 0;
 

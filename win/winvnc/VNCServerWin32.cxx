@@ -119,8 +119,10 @@ void VNCServerWin32::processAddressChange(network::SocketListener* sock_) {
   }
   
   // Pass the new tip to the tray icon
-  vlog.info("Refreshing tray icon");
-  trayIcon->setToolTip(toolTip.buf);
+  if ( ! quiteMode ) {
+    vlog.info("Refreshing tray icon");
+    trayIcon->setToolTip(toolTip.buf);
+  }
 }
 
 void VNCServerWin32::regConfigChanged() {
@@ -308,3 +310,6 @@ void VNCServerWin32::processEvent(HANDLE event_) {
   }
 }
 
+void VNCServerWin32::setRunningMode(bool quite) {
+	quiteMode = quite;
+}

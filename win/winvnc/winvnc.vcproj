@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="winvnc"
-	SccProjectName=""
-	SccLocalPath="">
+	ProjectGUID="{DA814B9E-141A-4044-95AD-6E8C6C13D67E}"
+	RootNamespace="winvnc"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug Unicode|Win32"
 			OutputDirectory=".\..\Debug_Unicode"
 			IntermediateDirectory=".\..\Debug_Unicode\winvnc"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="1">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\..\Debug_Unicode/winvnc.tlb"
+				HeaderFileName=""
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
@@ -25,64 +49,95 @@
 				PreprocessorDefinitions="_CONSOLE;_DEBUG;WIN32;UNICODE"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderFile=".\..\Debug_Unicode\winvnc/winvnc.pch"
 				AssemblerListingLocation=".\..\Debug_Unicode\winvnc/"
 				ObjectFile=".\..\Debug_Unicode\winvnc/"
 				ProgramDataBaseFileName=".\..\Debug_Unicode\winvnc/"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				DebugInformationFormat="3"
 				CompileAs="0"
-				ForcedIncludeFiles="rdr/msvcwarning.h"/>
+				ForcedIncludeFiles="rdr/msvcwarning.h"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="2057"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+				Description="Updating buildTime"
+				CommandLine="cl /c /nologo /Fo..\Debug_Unicode /Fd..\Debug_Unicode\winvnc /MTd buildTime.cxx"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/FIXED:NO"
 				AdditionalDependencies="ws2_32.lib version.lib comctl32.lib"
-				OutputFile="..\Debug_Unicode/winvnc4.exe"
+				ShowProgress="0"
+				OutputFile="..\Debug_Unicode/rdha.exe"
 				LinkIncremental="1"
-				SuppressStartupBanner="TRUE"
-				GenerateDebugInformation="TRUE"
+				SuppressStartupBanner="true"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\..\Debug_Unicode/winvnc4.pdb"
 				SubSystem="1"
-				TargetMachine="1"/>
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				TypeLibraryName=".\..\Debug_Unicode/winvnc.tlb"
-				HeaderFileName=""/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+				EmbedManifest="false"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"
-				Description="Updating buildTime"
-				CommandLine="cl /c /nologo /Fo..\Debug_Unicode /Fd..\Debug_Unicode\winvnc /MTd buildTime.cxx"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG"
-				Culture="2057"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\..\Debug"
 			IntermediateDirectory=".\..\Debug\winvnc"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\..\Debug/winvnc.tlb"
+				HeaderFileName=""
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
@@ -90,121 +145,160 @@
 				PreprocessorDefinitions="_DEBUG;_CONSOLE;WIN32"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="2"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderFile=".\..\Debug\winvnc/winvnc.pch"
 				AssemblerListingLocation=".\..\Debug\winvnc/"
 				ObjectFile=".\..\Debug\winvnc/"
 				ProgramDataBaseFileName=".\..\Debug\winvnc/"
 				BrowseInformation="1"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				DebugInformationFormat="3"
 				CompileAs="0"
-				ForcedIncludeFiles="rdr/msvcwarning.h"/>
+				ForcedIncludeFiles="rdr/msvcwarning.h"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="2057"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+				Description="Updating buildTime"
+				CommandLine="cl /c /nologo /Fo..\Debug\ /Fd..\Debug\winvnc /MTd buildTime.cxx"
+			/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/FIXED:NO"
 				AdditionalDependencies="ws2_32.lib version.lib comctl32.lib"
-				OutputFile="../Debug/winvnc4.exe"
+				OutputFile="../Debug/rdha.exe"
 				LinkIncremental="1"
-				SuppressStartupBanner="TRUE"
-				GenerateDebugInformation="TRUE"
+				SuppressStartupBanner="true"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\..\Debug/winvnc4.pdb"
 				SubSystem="1"
-				TargetMachine="1"/>
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"
-				TypeLibraryName=".\..\Debug/winvnc.tlb"
-				HeaderFileName=""/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"
-				Description="Updating buildTime"
-				CommandLine="cl /c /nologo /Fo..\Debug\ /Fd..\Debug\winvnc /MTd buildTime.cxx"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_DEBUG"
-				Culture="2057"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory=".\..\Release"
 			IntermediateDirectory=".\..\Release\winvnc"
 			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\..\Release/winvnc.tlb"
+				HeaderFileName=""
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="..,../../common"
 				PreprocessorDefinitions="NDEBUG;_CONSOLE;WIN32"
-				StringPooling="TRUE"
+				StringPooling="true"
 				RuntimeLibrary="0"
-				EnableFunctionLevelLinking="TRUE"
-				UsePrecompiledHeader="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="0"
 				PrecompiledHeaderFile=".\..\Release\winvnc/winvnc.pch"
 				AssemblerListingLocation=".\..\Release\winvnc/"
 				ObjectFile=".\..\Release\winvnc/"
 				ProgramDataBaseFileName=".\..\Release\winvnc/"
 				BrowseInformation="1"
 				WarningLevel="3"
-				SuppressStartupBanner="TRUE"
+				SuppressStartupBanner="true"
 				CompileAs="0"
-				ForcedIncludeFiles="rdr/msvcwarning.h"/>
+				ForcedIncludeFiles="rdr/msvcwarning.h"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalDependencies="ws2_32.lib version.lib comctl32.lib"
-				OutputFile="../Release/winvnc4.exe"
-				LinkIncremental="1"
-				SuppressStartupBanner="TRUE"
-				ProgramDatabaseFile=".\..\Release/winvnc4.pdb"
-				SubSystem="1"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"
-				TypeLibraryName=".\..\Release/winvnc.tlb"
-				HeaderFileName=""/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"
-				Description="Updating buildTime"
-				CommandLine="cl /c /nologo /Fo..\Release\ /Fd..\Release\winvnc /MT buildTime.cxx"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
-				Culture="2057"/>
+				Culture="2057"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+				Description="Updating buildTime"
+				CommandLine="cl /c /nologo /Fo..\Release\ /Fd..\Release\winvnc /MT buildTime.cxx"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+				AdditionalDependencies="ws2_32.lib version.lib comctl32.lib"
+				OutputFile="../Release/rdha.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				ProgramDatabaseFile=".\..\Release/winvnc4.pdb"
+				SubSystem="1"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -212,21 +306,26 @@
 	<Files>
 		<Filter
 			Name="Source Files"
-			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+			>
 			<File
-				RelativePath="buildTime.cxx">
+				RelativePath="buildTime.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -234,33 +333,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="JavaViewer.cxx">
+				RelativePath="JavaViewer.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -268,33 +374,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="ManagedListener.cxx">
+				RelativePath="ManagedListener.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -302,33 +415,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="QueryConnectDialog.cxx">
+				RelativePath="QueryConnectDialog.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -336,33 +456,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="STrayIcon.cxx">
+				RelativePath="STrayIcon.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -370,33 +497,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="VNCServerService.cxx">
+				RelativePath="VNCServerService.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -404,33 +538,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="VNCServerWin32.cxx">
+				RelativePath="VNCServerWin32.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -438,33 +579,40 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="winvnc.cxx">
+				RelativePath="winvnc.cxx"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="0"
@@ -472,84 +620,108 @@
 						PreprocessorDefinitions=""
 						BasicRuntimeChecks="3"
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
 						Optimization="2"
 						AdditionalIncludeDirectories=""
 						PreprocessorDefinitions=""
 						BrowseInformation="1"
-						ForcedIncludeFiles=""/>
+						ForcedIncludeFiles=""
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="winvnc.rc">
+				RelativePath="winvnc.rc"
+				>
 				<FileConfiguration
-					Name="Debug Unicode|Win32">
+					Name="Debug Unicode|Win32"
+					>
 					<Tool
 						Name="VCResourceCompilerTool"
-						PreprocessorDefinitions="_DEBUG;$(NoInherit)"/>
+						PreprocessorDefinitions="_DEBUG;$(NoInherit)"
+					/>
 				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
-			Filter="h;hpp;hxx;hm;inl">
+			Filter="h;hpp;hxx;hm;inl"
+			>
 			<File
-				RelativePath="AddNewClientDialog.h">
+				RelativePath="AddNewClientDialog.h"
+				>
 			</File>
 			<File
-				RelativePath="buildFeatures.h">
+				RelativePath="buildFeatures.h"
+				>
 			</File>
 			<File
-				RelativePath="JavaViewer.h">
+				RelativePath="JavaViewer.h"
+				>
 			</File>
 			<File
-				RelativePath="ManagedListener.h">
+				RelativePath="ManagedListener.h"
+				>
 			</File>
 			<File
-				RelativePath="QueryConnectDialog.h">
+				RelativePath="QueryConnectDialog.h"
+				>
 			</File>
 			<File
-				RelativePath="STrayIcon.h">
+				RelativePath="STrayIcon.h"
+				>
 			</File>
 			<File
-				RelativePath="VNCServerService.h">
+				RelativePath="VNCServerService.h"
+				>
 			</File>
 			<File
-				RelativePath="VNCServerWin32.h">
+				RelativePath="VNCServerWin32.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
-			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+			>
 			<File
-				RelativePath="connected.ico">
+				RelativePath="connected.ico"
+				>
 			</File>
 			<File
-				RelativePath="java\logo150x150.gif">
+				RelativePath="..\..\common\javabin\logo150x150.gif"
+				>
 			</File>
 			<File
-				RelativePath="..\..\common\javabin\logo150x150.gif">
+				RelativePath="java\logo150x150.gif"
+				>
 			</File>
 			<File
-				RelativePath="winvnc.bmp">
+				RelativePath="winvnc.bmp"
+				>
 			</File>
 			<File
-				RelativePath="winvnc.ico">
+				RelativePath="winvnc.ico"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath="..\..\common\javabin\index.vnc">
+			RelativePath="..\..\common\javabin\index.vnc"
+			>
 		</File>
 		<File
-			RelativePath="..\..\common\javabin\vncviewer.jar">
+			RelativePath="..\..\common\javabin\vncviewer.jar"
+			>
 		</File>
 		<File
-			RelativePath="winvnc4.exe.manifest">
+			RelativePath="winvnc4.exe.manifest"
+			>
 		</File>
 	</Files>
 	<Globals>

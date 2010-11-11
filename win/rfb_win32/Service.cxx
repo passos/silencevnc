@@ -407,9 +407,10 @@ bool rfb::win32::registerService(const TCHAR* name, const TCHAR* desc,
   TCharArray cmdline(cmdline_len+_tcslen(defaultcmdline));
   _stprintf(cmdline.buf, _T("\"%s\" %s"), buffer.buf, defaultcmdline);
   for (i=0; i<argc; i++) {
-    _tcscat(cmdline.buf, _T(" \""));
+    _tcscat(cmdline.buf, _T(" "));
+	//_tcscat(cmdline.buf, _T("\""));
     _tcscat(cmdline.buf, TStr(argv[i]));
-    _tcscat(cmdline.buf, _T("\""));
+    //_tcscat(cmdline.buf, _T("\""));
   }
     
   // - Register the service

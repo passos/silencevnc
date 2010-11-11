@@ -25,7 +25,7 @@ using namespace winvnc;
 using namespace rfb;
 using namespace win32;
 
-const TCHAR* winvnc::VNCServerService::Name = _T("WinVNC4");
+const TCHAR* winvnc::VNCServerService::Name = _T("svnc");
 
 
 VNCServerService::VNCServerService(VNCServerWin32& s)

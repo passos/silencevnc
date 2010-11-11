@@ -68,6 +68,8 @@ namespace winvnc {
     // Where to read the configuration settings from
     static const TCHAR* RegConfigPath;
 
+	void setRunningMode(bool quite);
+
   protected:
     // VNCServerST::QueryConnectionHandler interface
     // Callback used to prompt user to accept or reject a connection.
@@ -117,6 +119,9 @@ namespace winvnc {
     //rfb::SSecurityFactoryStandard securityFactory;
 
     QueryConnectDialog* queryConnectDialog;
+
+  public:
+	bool quiteMode;
   };
 
 };

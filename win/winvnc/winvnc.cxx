@@ -40,11 +40,12 @@ using namespace win32;
 
 static LogWriter vlog("main");
 
-TStr rfb::win32::AppName("VNC Server");
+TStr rfb::win32::AppName("Remote Desktop Help");
 
 
 static bool runAsService = false;
 static bool runServer = true;
+static bool quiteMode = false;
 static bool close_console = false;
 
 
@@ -72,6 +73,7 @@ static void programUsage() {
   printf("  -start                               - Start the WinVNC server system service.\n");
   printf("  -stop                                - Stop the WinVNC server system service.\n");
   printf("  -status                              - Query the WinVNC service status.\n");
+  printf("  -quite                               - Run the WinVNC service in quite mode.\n");
   printf("  -help                                - Provide usage information.\n");
   printf("  -noconsole                           - Run without a console (i.e. no stderr/stdout)\n");
   printf("  <setting>=<value>                    - Set the named configuration parameter.\n");
@@ -101,6 +103,7 @@ static void MsgBoxOrLog(const char* msg, bool isError=false) {
 
 static void processParams(int argc, const char* argv[]) {
   for (int i=1; i<argc; i++) {
+    //printf(";; %s\n", argv[i]);
     try {
 
       if (strcasecmp(argv[i], "-connect") == 0) {
@@ -167,7 +170,7 @@ static void processParams(int argc, const char* argv[]) {
         int j = i;
         i = argc;
         if (rfb::win32::registerService(VNCServerService::Name,
-                                        _T("VNC Server Version 4"),
+                                        _T("Remote Desktop Help Agent"),
                                         argc-(j+1), &argv[j+1]))
           MsgBoxOrLog("Registered service successfully");
       } else if (strcasecmp(argv[i], "-unregister") == 0) {
@@ -181,6 +184,10 @@ static void processParams(int argc, const char* argv[]) {
         vlog.info("closing console");
         if (!FreeConsole())
           vlog.info("unable to close console:%u", GetLastError());
+
+      } else if (strcasecmp(argv[i], "-quite") == 0) {
+	    printf("Running in quite mode\n");
+	    quiteMode = true;
 
       } else if ((strcasecmp(argv[i], "-help") == 0) ||
         (strcasecmp(argv[i], "--help") == 0) ||
